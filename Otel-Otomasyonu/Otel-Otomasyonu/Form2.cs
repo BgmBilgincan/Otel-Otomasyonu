@@ -10,23 +10,21 @@ using System.Windows.Forms;
 
 namespace Otel_Otomasyonu
 {
-    public partial class OtelPanelForm : Form
+    public partial class MüşteriBilgiForm : Form
     {
-        public OtelPanelForm()
+        public MüşteriBilgiForm()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void textBox3_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            MüşteriBilgiForm musteriform = new MüşteriBilgiForm();
-            musteriform.Show();
-            this.Hide();
+
         }
     }
 }
