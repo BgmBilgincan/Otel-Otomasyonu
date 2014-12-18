@@ -3,8 +3,10 @@ C:\Users\Begüm\Desktop\Otel-Otomasyonu\Otel-Otomasyonu\Otel-Otomasyonu\bin\Debu
 C:\Users\Begüm\Desktop\Otel-Otomasyonu\Otel-Otomasyonu\Otel-Otomasyonu\bin\Debug\Otel-Otomasyonu.pdb
 C:\Users\Begüm\Desktop\Otel-Otomasyonu\Otel-Otomasyonu\Otel-Otomasyonu\obj\Debug\Otel-Otomasyonu.csprojResolveAssemblyReference.cache
 C:\Users\Begüm\Desktop\Otel-Otomasyonu\Otel-Otomasyonu\Otel-Otomasyonu\obj\Debug\Otel_Otomasyonu.OtelPanelForm.resources
-C:\Users\Begüm\Desktop\Otel-Otomasyonu\Otel-Otomasyonu\Otel-Otomasyonu\obj\Debug\Otel_Otomasyonu.MüşteriBilgiForm.resources
 C:\Users\Begüm\Desktop\Otel-Otomasyonu\Otel-Otomasyonu\Otel-Otomasyonu\obj\Debug\Otel_Otomasyonu.Properties.Resources.resources
 C:\Users\Begüm\Desktop\Otel-Otomasyonu\Otel-Otomasyonu\Otel-Otomasyonu\obj\Debug\Otel-Otomasyonu.csproj.GenerateResource.Cache
 C:\Users\Begüm\Desktop\Otel-Otomasyonu\Otel-Otomasyonu\Otel-Otomasyonu\obj\Debug\Otel-Otomasyonu.exe
 C:\Users\Begüm\Desktop\Otel-Otomasyonu\Otel-Otomasyonu\Otel-Otomasyonu\obj\Debug\Otel-Otomasyonu.pdb
+C:\Users\Begüm\Desktop\Otel-Otomasyonu\Otel-Otomasyonu\Otel-Otomasyonu\obj\Debug\Otel_Otomasyonu.MusteriForm.resources
+C:\Users\Begüm\Desktop\Otel-Otomasyonu\Otel-Otomasyonu\Otel-Otomasyonu\obj\Debug\Otel_Otomasyonu.MusteriBilgiForm.resources
+C:\Users\Begüm\Desktop\Otel-Otomasyonu\Otel-Otomasyonu\Otel-Otomasyonu\obj\Debug\Otel_Otomasyonu.OdalarForm.resources

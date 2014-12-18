@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Otel_Otomasyonu
 {
-    public partial class MüşteriBilgiForm : Form
+    public partial class MusteriBilgiForm : Form
     {
-        public MüşteriBilgiForm()
+        SqlConnection baglanti;
+        public MusteriBilgiForm()
         {
             InitializeComponent();
         }
@@ -24,6 +26,25 @@ namespace Otel_Otomasyonu
 
         private void button2_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void MüşteriBilgiForm_Load(object sender, EventArgs e)
+        {
+            baglanti = new SqlConnection("Data Source=FATIMRENER;Initial Catalog=ders;Integrated Security=true");
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+
+
+
 
         }
     }

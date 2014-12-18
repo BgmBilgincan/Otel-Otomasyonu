@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Otel_Otomasyonu
 {
@@ -19,14 +20,28 @@ namespace Otel_Otomasyonu
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            Timer.Enabled = true;
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void Timer_Tick(object sender, EventArgs e)
         {
-            MüşteriBilgiForm musteriform = new MüşteriBilgiForm();
-            musteriform.Show();
+           TarihLabel.Text = DateTime.Now.ToShortDateString();
+           SaatLabel.Text = DateTime.Now.ToLongTimeString();
+        }
+
+        private void MusteriButon_Click(object sender, EventArgs e)
+        {
+            MusteriBilgiForm musteribilgiform = new MusteriBilgiForm();
+            musteribilgiform.Show();
             this.Hide();
         }
+
+        private void OdalarButon_Click(object sender, EventArgs e)
+        {
+            OdalarForm odalarformu = new OdalarForm();
+            odalarformu.Show();
+            this.Hide();
+        }
+
     }
 }
