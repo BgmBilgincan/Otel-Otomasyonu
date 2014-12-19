@@ -28,19 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.OdalarListe = new System.Windows.Forms.ListView();
             this.MEkleButon = new System.Windows.Forms.Button();
             this.OdaIslemLAbel = new System.Windows.Forms.Label();
             this.MKaldırButon = new System.Windows.Forms.Button();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
-            // listView1
+            // OdalarListe
             // 
-            this.listView1.Location = new System.Drawing.Point(12, 93);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(500, 184);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.OdalarListe.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3});
+            this.OdalarListe.Location = new System.Drawing.Point(12, 93);
+            this.OdalarListe.Name = "OdalarListe";
+            this.OdalarListe.Size = new System.Drawing.Size(500, 184);
+            this.OdalarListe.TabIndex = 0;
+            this.OdalarListe.UseCompatibleStateImageBehavior = false;
+            this.OdalarListe.View = System.Windows.Forms.View.Details;
             // 
             // MEkleButon
             // 
@@ -52,6 +60,7 @@
             this.MEkleButon.TabIndex = 1;
             this.MEkleButon.Text = "Müşteri Ekle";
             this.MEkleButon.UseVisualStyleBackColor = true;
+            this.MEkleButon.Click += new System.EventHandler(this.MEkleButon_Click);
             // 
             // OdaIslemLAbel
             // 
@@ -73,6 +82,21 @@
             this.MKaldırButon.Text = "Müşteri Kaldır";
             this.MKaldırButon.UseVisualStyleBackColor = true;
             // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Oda İsmi";
+            this.columnHeader1.Width = 76;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Limit";
+            this.columnHeader2.Width = 76;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Durum";
+            this.columnHeader3.Width = 83;
+            // 
             // OdalarForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -82,9 +106,10 @@
             this.Controls.Add(this.MKaldırButon);
             this.Controls.Add(this.OdaIslemLAbel);
             this.Controls.Add(this.MEkleButon);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.OdalarListe);
             this.Name = "OdalarForm";
             this.Text = "Odalar";
+            this.Load += new System.EventHandler(this.OdalarForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -92,9 +117,12 @@
 
         #endregion
 
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView OdalarListe;
         private System.Windows.Forms.Button MEkleButon;
         private System.Windows.Forms.Label OdaIslemLAbel;
         private System.Windows.Forms.Button MKaldırButon;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
     }
 }

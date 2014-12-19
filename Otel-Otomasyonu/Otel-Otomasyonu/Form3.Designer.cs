@@ -1,6 +1,6 @@
 ﻿namespace Otel_Otomasyonu
 {
-    partial class MusteriForm
+    partial class MusteriEkleForm
     {
         /// <summary>
         /// Required designer variable.
@@ -33,13 +33,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.TcKutu = new System.Windows.Forms.TextBox();
+            this.AdKutu = new System.Windows.Forms.TextBox();
+            this.SoyadKutu = new System.Windows.Forms.TextBox();
+            this.TelefonKutu = new System.Windows.Forms.TextBox();
+            this.CinsiyetKutu = new System.Windows.Forms.TextBox();
+            this.KaydetButon = new System.Windows.Forms.Button();
+            this.Cikisbuton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // TCLabel
@@ -81,7 +81,6 @@
             this.label4.Size = new System.Drawing.Size(65, 18);
             this.label4.TabIndex = 3;
             this.label4.Text = "Telefon :";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -93,74 +92,75 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Cinsiyet :";
             // 
-            // textBox1
+            // TcKutu
             // 
-            this.textBox1.Location = new System.Drawing.Point(113, 27);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(120, 20);
-            this.textBox1.TabIndex = 5;
+            this.TcKutu.Location = new System.Drawing.Point(113, 27);
+            this.TcKutu.Name = "TcKutu";
+            this.TcKutu.Size = new System.Drawing.Size(120, 20);
+            this.TcKutu.TabIndex = 5;
             // 
-            // textBox2
+            // AdKutu
             // 
-            this.textBox2.Location = new System.Drawing.Point(113, 70);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(120, 20);
-            this.textBox2.TabIndex = 6;
+            this.AdKutu.Location = new System.Drawing.Point(113, 70);
+            this.AdKutu.Name = "AdKutu";
+            this.AdKutu.Size = new System.Drawing.Size(120, 20);
+            this.AdKutu.TabIndex = 6;
             // 
-            // textBox3
+            // SoyadKutu
             // 
-            this.textBox3.Location = new System.Drawing.Point(113, 113);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(120, 20);
-            this.textBox3.TabIndex = 7;
+            this.SoyadKutu.Location = new System.Drawing.Point(113, 113);
+            this.SoyadKutu.Name = "SoyadKutu";
+            this.SoyadKutu.Size = new System.Drawing.Size(120, 20);
+            this.SoyadKutu.TabIndex = 7;
             // 
-            // textBox4
+            // TelefonKutu
             // 
-            this.textBox4.Location = new System.Drawing.Point(113, 153);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(120, 20);
-            this.textBox4.TabIndex = 8;
+            this.TelefonKutu.Location = new System.Drawing.Point(113, 153);
+            this.TelefonKutu.Name = "TelefonKutu";
+            this.TelefonKutu.Size = new System.Drawing.Size(120, 20);
+            this.TelefonKutu.TabIndex = 8;
             // 
-            // textBox5
+            // CinsiyetKutu
             // 
-            this.textBox5.Location = new System.Drawing.Point(113, 192);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(120, 20);
-            this.textBox5.TabIndex = 9;
+            this.CinsiyetKutu.Location = new System.Drawing.Point(113, 192);
+            this.CinsiyetKutu.Name = "CinsiyetKutu";
+            this.CinsiyetKutu.Size = new System.Drawing.Size(120, 20);
+            this.CinsiyetKutu.TabIndex = 9;
             // 
-            // button1
+            // KaydetButon
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(15, 242);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 27);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Kaydet";
-            this.button1.UseVisualStyleBackColor = true;
+            this.KaydetButon.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.KaydetButon.Location = new System.Drawing.Point(15, 242);
+            this.KaydetButon.Name = "KaydetButon";
+            this.KaydetButon.Size = new System.Drawing.Size(101, 27);
+            this.KaydetButon.TabIndex = 10;
+            this.KaydetButon.Text = "Kaydet";
+            this.KaydetButon.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // Cikisbuton
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(132, 242);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(101, 27);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "Çıkış";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Cikisbuton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Cikisbuton.Location = new System.Drawing.Point(132, 242);
+            this.Cikisbuton.Name = "Cikisbuton";
+            this.Cikisbuton.Size = new System.Drawing.Size(101, 27);
+            this.Cikisbuton.TabIndex = 11;
+            this.Cikisbuton.Text = "Çıkış";
+            this.Cikisbuton.UseVisualStyleBackColor = true;
+            this.Cikisbuton.Click += new System.EventHandler(this.Cikisbuton_Click);
             // 
-            // MusteriForm
+            // MusteriEkleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.ClientSize = new System.Drawing.Size(254, 281);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Cikisbuton);
+            this.Controls.Add(this.KaydetButon);
+            this.Controls.Add(this.CinsiyetKutu);
+            this.Controls.Add(this.TelefonKutu);
+            this.Controls.Add(this.SoyadKutu);
+            this.Controls.Add(this.AdKutu);
+            this.Controls.Add(this.TcKutu);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -168,9 +168,8 @@
             this.Controls.Add(this.TCLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.HelpButton = true;
-            this.Name = "MusteriForm";
+            this.Name = "MusteriEkleForm";
             this.Text = "Müşteri Formu";
-            this.Load += new System.EventHandler(this.Form3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -183,12 +182,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox TcKutu;
+        private System.Windows.Forms.TextBox AdKutu;
+        private System.Windows.Forms.TextBox SoyadKutu;
+        private System.Windows.Forms.TextBox TelefonKutu;
+        private System.Windows.Forms.TextBox CinsiyetKutu;
+        private System.Windows.Forms.Button KaydetButon;
+        private System.Windows.Forms.Button Cikisbuton;
     }
 }

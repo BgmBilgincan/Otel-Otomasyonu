@@ -33,14 +33,13 @@ namespace Otel_Otomasyonu
         {
             MusteriBilgiForm musteribilgiform = new MusteriBilgiForm();
             musteribilgiform.Show();
-            this.Hide();
         }
 
         private void OdalarButon_Click(object sender, EventArgs e)
         {
             OdalarForm odalarformu = new OdalarForm();
             odalarformu.Show();
-            this.Hide();
+            
         }
 
     }

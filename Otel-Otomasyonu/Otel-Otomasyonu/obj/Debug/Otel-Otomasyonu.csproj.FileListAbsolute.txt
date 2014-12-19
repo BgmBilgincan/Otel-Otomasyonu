@@ -7,6 +7,6 @@ C:\Users\Begüm\Desktop\Otel-Otomasyonu\Otel-Otomasyonu\Otel-Otomasyonu\obj\Debu
 C:\Users\Begüm\Desktop\Otel-Otomasyonu\Otel-Otomasyonu\Otel-Otomasyonu\obj\Debug\Otel-Otomasyonu.csproj.GenerateResource.Cache
 C:\Users\Begüm\Desktop\Otel-Otomasyonu\Otel-Otomasyonu\Otel-Otomasyonu\obj\Debug\Otel-Otomasyonu.exe
 C:\Users\Begüm\Desktop\Otel-Otomasyonu\Otel-Otomasyonu\Otel-Otomasyonu\obj\Debug\Otel-Otomasyonu.pdb
-C:\Users\Begüm\Desktop\Otel-Otomasyonu\Otel-Otomasyonu\Otel-Otomasyonu\obj\Debug\Otel_Otomasyonu.MusteriForm.resources
 C:\Users\Begüm\Desktop\Otel-Otomasyonu\Otel-Otomasyonu\Otel-Otomasyonu\obj\Debug\Otel_Otomasyonu.MusteriBilgiForm.resources
 C:\Users\Begüm\Desktop\Otel-Otomasyonu\Otel-Otomasyonu\Otel-Otomasyonu\obj\Debug\Otel_Otomasyonu.OdalarForm.resources
+C:\Users\Begüm\Desktop\Otel-Otomasyonu\Otel-Otomasyonu\Otel-Otomasyonu\obj\Debug\Otel_Otomasyonu.MusteriEkleForm.resources

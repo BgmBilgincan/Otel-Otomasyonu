@@ -10,21 +10,22 @@ using System.Windows.Forms;
 
 namespace Otel_Otomasyonu
 {
-    public partial class MusteriForm : Form
+    public partial class MusteriEkleForm : Form
     {
-        public MusteriForm()
+        public MusteriEkleForm()
         {
             InitializeComponent();
         }
 
-        private void Form3_Load(object sender, EventArgs e)
+        private void Cikisbuton_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
+       
 
-        }
+      
+
+       
     }
 }
