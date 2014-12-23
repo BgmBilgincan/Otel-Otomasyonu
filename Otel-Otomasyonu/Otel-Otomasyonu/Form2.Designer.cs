@@ -45,6 +45,7 @@
             this.AramaKutu.Size = new System.Drawing.Size(155, 20);
             this.AramaKutu.TabIndex = 0;
             this.AramaKutu.TextChanged += new System.EventHandler(this.AramaKutu_TextChanged);
+            this.AramaKutu.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AramaKutu_KeyPress);
             // 
             // label1
             // 
@@ -96,7 +97,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.BackColor = System.Drawing.Color.MediumPurple;
             this.ClientSize = new System.Drawing.Size(644, 283);
             this.Controls.Add(this.Liste);
             this.Controls.Add(this.label1);

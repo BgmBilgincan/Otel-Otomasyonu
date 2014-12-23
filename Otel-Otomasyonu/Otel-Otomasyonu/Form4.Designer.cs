@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.OdalarListe = new System.Windows.Forms.ListView();
-            this.MEkleButon = new System.Windows.Forms.Button();
-            this.OdaIslemLAbel = new System.Windows.Forms.Label();
-            this.MKaldırButon = new System.Windows.Forms.Button();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.MEkleButon = new System.Windows.Forms.Button();
+            this.OdaIslemLAbel = new System.Windows.Forms.Label();
+            this.MKaldırButon = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // OdalarListe
@@ -49,6 +49,22 @@
             this.OdalarListe.TabIndex = 0;
             this.OdalarListe.UseCompatibleStateImageBehavior = false;
             this.OdalarListe.View = System.Windows.Forms.View.Details;
+            this.OdalarListe.SelectedIndexChanged += new System.EventHandler(this.OdalarListe_SelectedIndexChanged);
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Oda İsmi";
+            this.columnHeader1.Width = 76;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Limit";
+            this.columnHeader2.Width = 76;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Durum";
+            this.columnHeader3.Width = 83;
             // 
             // MEkleButon
             // 
@@ -81,27 +97,13 @@
             this.MKaldırButon.TabIndex = 3;
             this.MKaldırButon.Text = "Müşteri Kaldır";
             this.MKaldırButon.UseVisualStyleBackColor = true;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Oda İsmi";
-            this.columnHeader1.Width = 76;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Limit";
-            this.columnHeader2.Width = 76;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Durum";
-            this.columnHeader3.Width = 83;
+            this.MKaldırButon.Click += new System.EventHandler(this.MKaldırButon_Click);
             // 
             // OdalarForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SlateBlue;
+            this.BackColor = System.Drawing.Color.MediumPurple;
             this.ClientSize = new System.Drawing.Size(524, 289);
             this.Controls.Add(this.MKaldırButon);
             this.Controls.Add(this.OdaIslemLAbel);

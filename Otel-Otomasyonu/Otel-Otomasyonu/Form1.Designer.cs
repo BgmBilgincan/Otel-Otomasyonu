@@ -108,7 +108,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.BackColor = System.Drawing.Color.MediumPurple;
             this.ClientSize = new System.Drawing.Size(311, 203);
             this.Controls.Add(this.MusteriButon);
             this.Controls.Add(this.SaatLabel);

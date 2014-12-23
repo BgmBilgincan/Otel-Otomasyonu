@@ -98,6 +98,7 @@
             this.TcKutu.Name = "TcKutu";
             this.TcKutu.Size = new System.Drawing.Size(120, 20);
             this.TcKutu.TabIndex = 5;
+            this.TcKutu.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TcKutu_KeyPress);
             // 
             // AdKutu
             // 
@@ -105,6 +106,7 @@
             this.AdKutu.Name = "AdKutu";
             this.AdKutu.Size = new System.Drawing.Size(120, 20);
             this.AdKutu.TabIndex = 6;
+            this.AdKutu.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AdKutu_KeyPress);
             // 
             // SoyadKutu
             // 
@@ -112,6 +114,7 @@
             this.SoyadKutu.Name = "SoyadKutu";
             this.SoyadKutu.Size = new System.Drawing.Size(120, 20);
             this.SoyadKutu.TabIndex = 7;
+            this.SoyadKutu.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoyadKutu_KeyPress);
             // 
             // TelefonKutu
             // 
@@ -119,6 +122,7 @@
             this.TelefonKutu.Name = "TelefonKutu";
             this.TelefonKutu.Size = new System.Drawing.Size(120, 20);
             this.TelefonKutu.TabIndex = 8;
+            this.TelefonKutu.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TelefonKutu_KeyPress);
             // 
             // CinsiyetKutu
             // 
@@ -126,6 +130,7 @@
             this.CinsiyetKutu.Name = "CinsiyetKutu";
             this.CinsiyetKutu.Size = new System.Drawing.Size(120, 20);
             this.CinsiyetKutu.TabIndex = 9;
+            this.CinsiyetKutu.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CinsiyetKutu_KeyPress);
             // 
             // KaydetButon
             // 
@@ -136,6 +141,7 @@
             this.KaydetButon.TabIndex = 10;
             this.KaydetButon.Text = "Kaydet";
             this.KaydetButon.UseVisualStyleBackColor = true;
+            this.KaydetButon.Click += new System.EventHandler(this.KaydetButon_Click);
             // 
             // Cikisbuton
             // 
@@ -152,7 +158,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.BackColor = System.Drawing.Color.MediumPurple;
             this.ClientSize = new System.Drawing.Size(254, 281);
             this.Controls.Add(this.Cikisbuton);
             this.Controls.Add(this.KaydetButon);
@@ -170,6 +176,7 @@
             this.HelpButton = true;
             this.Name = "MusteriEkleForm";
             this.Text = "Müşteri Formu";
+            this.Load += new System.EventHandler(this.MusteriEkleForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

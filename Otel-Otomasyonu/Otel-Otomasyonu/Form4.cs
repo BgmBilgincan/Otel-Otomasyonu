@@ -55,6 +55,7 @@ namespace Otel_Otomasyonu
                         }
                     }
                 }
+
                 else
                     baglanti.Close();
             }
@@ -64,11 +65,55 @@ namespace Otel_Otomasyonu
                 throw;
             }
         }
-
         private void MEkleButon_Click(object sender, EventArgs e)
         {
             MusteriEkleForm musterieklemeformu = new MusteriEkleForm();
             musterieklemeformu.Show();
+
+            string durum = OdalarListe.SelectedItems[0].SubItems[2].Text;
+            if (durum=="Dolu")
+            {
+                MessageBox.Show("Dolu Durumda Olan Odaya Müşteri Eklenemez");
+            }
+        }
+        private void MKaldırButon_Click(object sender, EventArgs e)
+        {
+
+            string isim = OdalarListe.SelectedItems[0].Text;
+            string durum = OdalarListe.SelectedItems[0].SubItems[2].Text;
+
+            try
+            {
+                if (durum == "Boş")
+                {
+                    MessageBox.Show("Boş Durumda Olan Oda Boşaltılamaz");
+                }
+                else if (durum == "Dolu")
+                {
+                    SqlCommand komut = new SqlCommand("UPDATE Odalar SET Durum=@Durum WHERE Isim=@Isim", baglanti);
+                    komut.Parameters.AddWithValue("@Isim", isim);
+                    komut.Parameters.AddWithValue("@Durum", "Boş");
+
+                    if (baglanti.State == ConnectionState.Closed)
+                    {
+                        baglanti.Open();
+                    }
+                    komut.ExecuteNonQuery();
+                    baglanti.Close();
+                    Oda_Liste();
+
+                    MessageBox.Show("Güncellendi.");
+                }
+            }
+
+            catch (SqlException hata)
+            {
+                MessageBox.Show(hata.Message);
+            }
+        }
+        private void OdalarListe_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string durum = OdalarListe.SelectedItems[0].SubItems[2].Text;            
         }
     }
 }
