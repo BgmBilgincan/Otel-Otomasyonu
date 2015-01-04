@@ -66,25 +66,29 @@ namespace Otel_Otomasyonu
                         }
                     }
                 }
-                //else
-               // {
-                   // MessageBox.Show("Müşteri Bulunamadı");
-               // }
+               
                 baglanti.Close();
-
             }
             catch (SqlException hata)
             {
                 MessageBox.Show(hata.Message);
                 throw;
             }
-
-
         }
 
         private void AramaKutu_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
+
+        private void Liste_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

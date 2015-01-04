@@ -50,7 +50,6 @@ namespace Otel_Otomasyonu
                             ListViewItem item = new ListViewItem(satir["Isim"].ToString());
                             item.SubItems.Add(satir["Limit"].ToString());
                             item.SubItems.Add(satir["Durum"].ToString());
-
                             OdalarListe.Items.Add(item);
                         }
                     }
@@ -67,22 +66,96 @@ namespace Otel_Otomasyonu
         }
         private void MEkleButon_Click(object sender, EventArgs e)
         {
-            MusteriEkleForm musterieklemeformu = new MusteriEkleForm();
-            musterieklemeformu.Show();
+
 
             string durum = OdalarListe.SelectedItems[0].SubItems[2].Text;
+            string odaisim = OdalarListe.SelectedItems[0].Text;
+            string limit = OdalarListe.SelectedItems[0].SubItems[1].Text;
+            
+            
             if (durum=="Dolu")
             {
                 MessageBox.Show("Dolu Durumda Olan Odaya Müşteri Eklenemez");
             }
+            else
+            {
+                MusteriEkleForm musterieklemeformu = new MusteriEkleForm();
+                musterieklemeformu.odaisim = odaisim;
+                musterieklemeformu.limit = Convert.ToInt32(limit);
+                musterieklemeformu.Show();
+            }
         }
         private void MKaldırButon_Click(object sender, EventArgs e)
         {
+            string isim = OdalarListe.SelectedItems[0].Text;
+            string durum = OdalarListe.SelectedItems[0].SubItems[2].Text;
+            try
+            {
+                if (durum == "Boş")
+                {
+                    MessageBox.Show("Boş Durumda Olan Oda Boşaltılamaz");
+                }
+                else if (durum == "Dolu")
+                {
+                    SqlCommand komut = new SqlCommand("UPDATE Odalar SET Durum=@Durum WHERE Isim=@Isim", baglanti);
+                    komut.Parameters.AddWithValue("@Isim", isim);
+                    komut.Parameters.AddWithValue("@Durum", "Boş");
 
+                    //SqlCommand g_komut = new SqlCommand("UPDATE HangiOdadaKimVar SET Durum=@Durum WHERE Isım=@Isim",baglanti);
+                    //g_komut.Parameters.AddWithValue("@Isim", isim);
+                    //g_komut.Parameters.AddWithValue("@Durum", "Boş");
+
+                    if (baglanti.State == ConnectionState.Closed)
+                    {
+                        baglanti.Open();
+                    }
+                    //g_komut.ExecuteNonQuery();
+                    komut.ExecuteNonQuery();
+                    baglanti.Close();
+                    Oda_Liste();
+
+                    MessageBox.Show("Güncellendi.");
+                }
+            }
+
+            catch (SqlException hata)
+            {
+                MessageBox.Show(hata.Message);
+            }
+
+        }
+        private void OdalarListe_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void OdalarListe_ItemSelectionChanged(object sender, ListViewItemSelectionChangedEventArgs e)
+        {
+
+            try
+            {
+                string durum = OdalarListe.SelectedItems[0].SubItems[2].Text;
+                
+            }
+            catch (ArgumentOutOfRangeException) { };
+
+        }
+
+        private void OdaIslemLAbel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       /* public void Tablo_Guncelle()
+        {
+            if (baglanti.State == ConnectionState.Closed)
+            {
+                baglanti.Open();
+            }
             string isim = OdalarListe.SelectedItems[0].Text;
             string durum = OdalarListe.SelectedItems[0].SubItems[2].Text;
 
-            try
+             try
             {
                 if (durum == "Boş")
                 {
@@ -109,12 +182,15 @@ namespace Otel_Otomasyonu
             catch (SqlException hata)
             {
                 MessageBox.Show(hata.Message);
-            }
-        }
-        private void OdalarListe_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string durum = OdalarListe.SelectedItems[0].SubItems[2].Text;            
-        }
+          */ 
     }
-}
+
+  }
+        
+        
+
+
+
+    
+
 

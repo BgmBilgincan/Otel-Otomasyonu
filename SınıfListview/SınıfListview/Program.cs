@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Otel_Otomasyonu
+namespace SınıfListview
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace Otel_Otomasyonu
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AdminPanel());
+            Application.Run(new Form1());
         }
     }
 }

@@ -18,10 +18,6 @@ namespace Otel_Otomasyonu
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            Timer.Enabled = true;
-        }
 
         private void Timer_Tick(object sender, EventArgs e)
         {
@@ -40,6 +36,16 @@ namespace Otel_Otomasyonu
             OdalarForm odalarformu = new OdalarForm();
             odalarformu.Show();
             
+        }
+
+        private void SaatLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OtelPanelForm_Load(object sender, EventArgs e)
+        {
+            Timer.Enabled = true;
         }
 
     }
